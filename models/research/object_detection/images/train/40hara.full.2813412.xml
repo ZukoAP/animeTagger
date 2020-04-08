@@ -1,0 +1,62 @@
+<annotation>
+	<folder>train</folder>
+	<filename>40hara.full.2813412.png</filename>
+	<path>D:\Programming\PP\animeTagging\tags\animal ears\train\40hara.full.2813412.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1111</width>
+		<height>1000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Animal ears</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>596</xmin>
+			<ymin>213</ymin>
+			<xmax>912</xmax>
+			<ymax>422</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Male</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>106</xmin>
+			<ymin>1</ymin>
+			<xmax>614</xmax>
+			<ymax>555</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Open Mouth</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>684</xmin>
+			<ymin>554</ymin>
+			<xmax>704</xmax>
+			<ymax>577</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Female</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>588</xmin>
+			<ymin>254</ymin>
+			<xmax>943</xmax>
+			<ymax>712</ymax>
+		</bndbox>
+	</object>
+</annotation>

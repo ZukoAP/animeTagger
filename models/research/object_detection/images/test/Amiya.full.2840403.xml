@@ -1,0 +1,62 @@
+<annotation>
+	<folder>test</folder>
+	<filename>Amiya.full.2840403.png</filename>
+	<path>D:\Programming\PP\animeTagging\tags\animal ears\test\Amiya.full.2840403.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5760</width>
+		<height>2408</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Animal ears</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1719</xmin>
+			<ymin>286</ymin>
+			<xmax>2437</xmax>
+			<ymax>1011</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Hat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1565</xmin>
+			<ymin>761</ymin>
+			<xmax>2865</xmax>
+			<ymax>1664</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Long Hair</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1872</xmin>
+			<ymin>868</ymin>
+			<xmax>3355</xmax>
+			<ymax>2325</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Female</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1940</xmin>
+			<ymin>918</ymin>
+			<xmax>2547</xmax>
+			<ymax>1454</ymax>
+		</bndbox>
+	</object>
+</annotation>

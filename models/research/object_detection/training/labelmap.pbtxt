@@ -1,0 +1,104 @@
+item {
+  id: 1
+  name: 'Animal ears'
+}
+
+item {
+  id: 2
+  name: 'Bent Knees'
+}
+
+item {
+  id: 3
+  name: 'book'
+}
+
+item {
+  id: 4
+  name: 'Female'
+}
+
+item {
+  id: 5
+  name: 'Flower'
+}
+
+item {
+  id: 6
+  name: 'Hair Bow'
+}
+
+item {
+  id: 7
+  name: 'Hat'
+}
+
+item {
+  id: 8
+  name: 'Heart'
+}
+
+item {
+  id: 9
+  name: 'heterochromia'
+}
+
+item {
+  id: 10
+  name: 'Long Hair'
+}
+
+item {
+  id: 11
+  name: 'Male'
+}
+
+item {
+  id: 12
+  name: 'Open Mouth'
+}
+
+item {
+  id: 13
+  name: 'Scarf'
+}
+
+item {
+  id: 14
+  name: 'School Uniform'
+}
+
+item {
+  id: 15
+  name: 'Short Hair'
+}
+
+item {
+  id: 16
+  name: 'Smile'
+}
+
+item {
+  id: 17
+  name: 'Text'
+}
+
+item {
+  id: 18
+  name: 'Tie'
+}
+
+item {
+  id: 19
+  name: 'Tree'
+}
+
+item {
+  id: 20
+  name: 'Umbrella'
+}
+
+item {
+  id: 21
+  name: 'Wings'
+}

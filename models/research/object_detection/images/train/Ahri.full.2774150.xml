@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Ahri.full.2774150.jpg</filename>
+	<path>D:\Programming\PP\animeTagging\tags\animal ears\train\Ahri.full.2774150.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>1208</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Animal ears</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>390</xmin>
+			<ymin>394</ymin>
+			<xmax>745</xmax>
+			<ymax>709</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Open Mouth</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>344</xmin>
+			<ymin>761</ymin>
+			<xmax>424</xmax>
+			<ymax>820</ymax>
+		</bndbox>
+	</object>
+</annotation>
