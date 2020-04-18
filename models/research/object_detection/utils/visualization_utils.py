@@ -172,7 +172,9 @@ def draw_bounding_box_on_image(image,
   draw.line([(left, top), (left, bottom), (right, bottom),
              (right, top), (left, top)], width=thickness, fill=color)
   try:
-    font = ImageFont.truetype('arial.ttf', 24)
+    print("im_width=", im_width)
+    print("im_height=", im_height)
+    font = ImageFont.truetype('SegoeUI.ttf', int((im_width+im_height)/100))
   except IOError:
     font = ImageFont.load_default()
 

@@ -83,8 +83,9 @@ image_expanded = np.expand_dims(image_rgb, axis=0)
 (boxes, scores, classes, num) = sess.run(
     [detection_boxes, detection_scores, detection_classes, num_detections],
     feed_dict={image_tensor: image_expanded})
-
 # Draw the results of the detection (aka 'visulaize the results')
+category_index[4] = {'id': 4, 'name': 'Human'}
+category_index[11] = {'id': 11, 'name': 'Human'}
 
 vis_util.visualize_boxes_and_labels_on_image_array(
     image,
@@ -93,8 +94,8 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     np.squeeze(scores),
     category_index,
     use_normalized_coordinates=True,
-    line_thickness=8,
-    min_score_thresh=0.60)
+    line_thickness=3,
+    min_score_thresh=0.80)
 
 # All the results have been drawn on image. Now display the image.
 cv2.imshow('image', image)

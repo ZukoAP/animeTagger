@@ -1,3 +1,10 @@
+# Import packages
+import os
+import cv2
+import numpy as np
+import tensorflow as tf
+import sys
+
 # This is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
 
@@ -5,9 +12,11 @@ sys.path.append("..")
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 
+
+
 # Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-VIDEO_NAME = 'test.mov'
+VIDEO_NAME = 'test.mp4'
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
@@ -23,7 +32,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 21
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -63,12 +72,18 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
+video.set(3, 640)
+video.set(4, 480)
+
 
 while(video.isOpened()):
 
     # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
     # i.e. a single-column array, where each item in the column has the pixel RGB value
     ret, frame = video.read()
+    height, width = frame.shape[:2]
+    cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('frame', width, height)
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     frame_expanded = np.expand_dims(frame_rgb, axis=0)
 
@@ -78,6 +93,8 @@ while(video.isOpened()):
         feed_dict={image_tensor: frame_expanded})
 
     # Draw the results of the detection (aka 'visulaize the results')
+    category_index[4] = {'id': 4, 'name': 'Human'}
+    category_index[11] = {'id': 11, 'name': 'Human'}
     vis_util.visualize_boxes_and_labels_on_image_array(
         frame,
         np.squeeze(boxes),
@@ -85,11 +102,11 @@ while(video.isOpened()):
         np.squeeze(scores),
         category_index,
         use_normalized_coordinates=True,
-        line_thickness=8,
-        min_score_thresh=0.60)
+        line_thickness=3,
+        min_score_thresh=0.80)
 
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow('Object detector', frame)
+    cv2.imshow('frame', frame)
 
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
